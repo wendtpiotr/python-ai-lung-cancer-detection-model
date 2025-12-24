@@ -16,7 +16,7 @@ CORS(app)
 # --- Konfiguracja ---
 app.config['MAX_CONTENT_LENGTH'] = 10 * 1024 * 1024
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-MODEL_PATH = "./models/lung_cancer_model.pth"
+MODEL_PATH = "./lung_cancer_model.pth"
 
 # Transformacje (identyczne jak przy treningu)
 transform = transforms.Compose([
@@ -159,3 +159,4 @@ def analyze():
 if __name__ == '__main__':
     print(f"Server starting on {DEVICE}...")
     app.run(debug=True, host='0.0.0.0', port=7860)
+
