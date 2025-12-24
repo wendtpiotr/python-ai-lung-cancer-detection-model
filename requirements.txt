@@ -1,8 +1,9 @@
-torch==2.9.1
-torchvision==0.15.2
+torch
+torchvision
 flask
 flask-cors
 pillow
 numpy
 opencv-python-headless
 gunicorn
+
